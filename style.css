@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Play:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Sono:200,300,regular,500,600,700,800);
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --bg-gradient: linear-gradient(#e66465, #9198e5);
+    --button-gradient-bg: linear-gradient(to right, #99ccff 0%, #66ff66 100%);
+    --border-color: #f4f3db;
+    --input-color: #f4f3db93;
+    --error-color: #ff000094;
+    --theme-light: rgb(255, 255, 255);
+}
+
+#body
+{
+    background: #000;
+}
+
+main
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0px 1.5rem 2.5rem;
+    position: relative;
+}
+
+header
+{
+    font-family: 'Sono', sans-serif;
+    color: var(--border-color);
+    padding: 2rem 0;
+}
+
+button
+{
+    background: var(--button-gradient-bg);
+    cursor: pointer;
+    border: none;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    transition: 0.15s;
+}
+
+.input
+{
+    background: #000;
+    color: #fff;
+    border: 1px solid var(--input-color);
+    border-radius: 5px;
+    height: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: block;
+    font-size: 1.75rem;
+    text-align: end;
+    transition: 0.5s ease-in-out;
+}
+
+.input-light
+{
+    transition: 0.5s ease-in-out;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: block;
+    font-size: 1.75rem;
+    text-align: end;
+}
+
+#keys
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#keys button
+{
+    color: var(--bg-gradient);
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    font-family: 'Sono', sans-serif;
+}
+
+#keys button:hover
+{
+    filter: brightness(0.5);
+}
+
+#result
+{
+    border-width: 1px 1px 1px 0px;
+    border-radius: 0rem .5rem .5rem 0rem;
+}
+
+.copy
+{
+    background: transparent;
+    border: solid var(--input-color);
+    border-width: 1px 1px 1px 1px;
+    border-radius: .5rem 0 0 .5rem;
+    color: #fff;
+    display: block;
+    height: 5.13rem;
+    width: 6rem;
+}
+
+.copy-light
+{
+    background: transparent;
+    border: solid #000;
+    border-width: 1px 1px 1px 1px;
+    border-radius: .5rem 0 0 .5rem;
+    color: #000;
+    display: block;
+    height: 5.13rem;
+    width: 6rem;
+}
+
+.error
+{
+    background: var(--error-color);
+}
+
+.success
+{
+    border-color: lime !important;
+    color: lime !important;
+}
+
+.themeSwitcher
+{
+    background: transparent;
+    color: var(--border-color);
+    border: 2px solid var(--border-color);
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.themeSwitcher:hover 
+{
+    background: var(--border-color);
+    color: #000;
+}
+
+.theme-light
+{
+    background: #f4f3db;
+    color: #000;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.justify-between
+{
+    justify-content: space-between;
+}
+
+.align-center
+{
+    align-items: center;
+}
+
+.themeSwitcher-light
+{
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.themeSwitcher-light:hover 
+{
+    background: #000;
+    color: #fff;
+}
